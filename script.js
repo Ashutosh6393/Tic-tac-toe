@@ -3,6 +3,9 @@ const block = document.querySelectorAll('.block');
 const player1 = document.querySelector('.player1');
 const player2 = document.querySelector('.player2');
 const model = document.querySelector('.winner');
+const restart = document.querySelector('.options a')
+const link = window.location.href;
+restart.attributes.href.value = link;
 let dataMatrix = [[NaN, NaN, NaN], [NaN, NaN, NaN], [NaN, NaN, NaN]]
 let player = true;
 let chance = 0;
@@ -118,7 +121,6 @@ function clickHandler(event) {
 
 
 }
-
 
 addEvents();
 
