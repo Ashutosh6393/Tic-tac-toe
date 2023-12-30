@@ -90,7 +90,7 @@ function clickHandler(event) {
         player = false;
         if (winner) {
             removeEvents();
-            model.innerHTML= '<h1>Hurray !!!</h1><p>Player 1 Wins</p><a href="#">Restart</a>'
+            model.innerHTML= '<h1>Hurray !!!</h1><p>Player 1 Wins</p><a href="/Tic-tac-toe">Restart</a>'
             model.classList.remove('hidden')
         }
         event.target.removeEventListener('click', clickHandler);
