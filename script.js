@@ -90,7 +90,7 @@ function clickHandler(event) {
         player = false;
         if (winner) {
             removeEvents();
-            model.innerHTML= '<h1>Hurray !!!</h1><p>Player 1 Wins</p><a href="/Tic-tac-toe">Restart</a>'
+            model.innerHTML= '<h1>Hurray !!!</h1><p>Player 1 Wins</p>'
             model.classList.remove('hidden')
         }
         event.target.removeEventListener('click', clickHandler);
@@ -104,7 +104,7 @@ function clickHandler(event) {
         player = true;
         if (winner) {
             removeEvents();
-            model.innerHTML= '<h1>Hurray !!!</h1><p>Player 2 Wins</p><a href="#">Restart</a>'
+            model.innerHTML= '<h1>Hurray !!!</h1><p>Player 2 Wins</p>'
             model.classList.remove('hidden')
         }
         event.target.removeEventListener('click', clickHandler);
@@ -112,7 +112,7 @@ function clickHandler(event) {
     }
 
     if (chance === 9 && !checkWinner()) {
-        model.innerHTML= '<h1>Sorry !!!</h1><p>No one Wins</p><a href="#">Restart</a>'
+        model.innerHTML= '<h1>Sorry !!!</h1><p>No one Wins</p>'
         model.classList.remove('hidden')
     }
 
